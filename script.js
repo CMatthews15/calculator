@@ -6,14 +6,16 @@ data-equal*/
 
 
 class calc {
-    constructor(output){
-        this.output = output
+    constructor(output) {
+        this.output=output
+        this.clear()
     }
 }
 
 function appendNumber(number)
 
-function chooseOperation(operation)
+function chooseOperation(operation){
+    console.}
 
 function clear()
 
@@ -26,8 +28,14 @@ function updateDisplay()
 
 
 const output = document.querySelector("[data-output")
-const numButton = document.querySelectorAll("[data-number]")
-const opButton = document.querySelectorAll("[data-operator]")
-const clearButton = document.querySelector("[data-clear]")
-const equalButton = document.querySelector("[data-equal]")
+const numButton = document.querySelectorAll("[data-number]").addEventListener('click')
+const opButton = document.querySelectorAll("[data-operator]").addEventListener('click')
+const clearButton = document.querySelector("[data-clear]").addEventListener('click')
+const equalButton = document.querySelector("[data-equal]").addEventListener('click')
+const previousOperandTextElement = document.querySelector('[data-previous-operand]')
+const currentOperandTextElement = document.querySelector('[data-current-operand]')
 
+
+const calculator = new Calc(output)
+
+//if (click)eventListener number button,append number to
